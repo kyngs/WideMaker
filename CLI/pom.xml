@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.github.kyngs</groupId>
             <artifactId>WideMaker</artifactId>
-            <version>7c4f8ebad5</version>
+            <version>3f6c3b5264</version>
         </dependency>
         <!--
         <dependency>
