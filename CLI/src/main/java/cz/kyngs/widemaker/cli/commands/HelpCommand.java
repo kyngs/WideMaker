@@ -8,6 +8,6 @@ public class HelpCommand implements CommandExecutor {
     public void exec(String[] strings, CommandSender commandSender) {
         commandSender.sendMessage("help - Shows this.");
         commandSender.sendMessage("about - Shows some information about this program.");
-
+        commandSender.sendMessage("img - Convert Image to wide version.");
     }
 }

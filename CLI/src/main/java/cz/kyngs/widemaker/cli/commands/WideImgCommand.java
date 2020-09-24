@@ -37,7 +37,7 @@ public class WideImgCommand implements CommandExecutor {
 
         Instant end = Instant.now();
 
-        commandSender.sendMessage(String.format("Completed and saved in %d seconds!", Duration.between(start, end).getSeconds()));
+        commandSender.sendMessage(String.format("Completed and saved in %d millis!", Duration.between(start, end).getNano()/1000000));
 
     }
 }

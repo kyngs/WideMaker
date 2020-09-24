@@ -12,9 +12,9 @@ public class WideCore {
 
         BufferedImage target = new BufferedImage(source.getWidth()*3 , source.getHeight(), BufferedImage.TYPE_INT_RGB);
 
-        Graphics2D graphics = source.createGraphics();
+        Graphics graphics = target.getGraphics();
 
-        graphics.drawImage(target, 0, 0, target.getWidth(), target.getHeight(), null);
+        graphics.drawImage(source, 0, 0, target.getWidth(), target.getHeight(), null);
 
         return target;
 
@@ -25,6 +25,8 @@ public class WideCore {
     }
 
     public static void wideImgFromFileToFile(File source, File target) throws IOException {
+        if (target.exists()) target.delete();
+        target.createNewFile();
         ImageIO.write(wideImgFromFile(source), "PNG", target);
     }
 
