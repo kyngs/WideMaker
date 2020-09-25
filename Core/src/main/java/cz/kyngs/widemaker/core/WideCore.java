@@ -10,7 +10,7 @@ public class WideCore {
 
     public static BufferedImage wideImg(BufferedImage source){
 
-        BufferedImage target = new BufferedImage(source.getWidth()*3 , source.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        BufferedImage target = new BufferedImage(source.getWidth()*4 , source.getHeight(), BufferedImage.TYPE_INT_ARGB);
 
         Graphics graphics = target.getGraphics();
 

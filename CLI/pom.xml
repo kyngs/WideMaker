@@ -59,7 +59,7 @@
         <dependency>
             <groupId>com.github.kyngs</groupId>
             <artifactId>WideMaker</artifactId>
-            <version>e11af3e177</version>
+            <version>8e1599d7aa</version>
         </dependency>-->
         <dependency>
             <groupId>cz.kyngs.widemaker</groupId>
