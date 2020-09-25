@@ -55,17 +55,17 @@
             <artifactId>Logger</artifactId>
             <version>88ed48becc</version>
         </dependency>
-        <!--
         <dependency>
             <groupId>com.github.kyngs</groupId>
             <artifactId>WideMaker</artifactId>
             <version>8e1599d7aa</version>
-        </dependency>-->
+        </dependency>
+        <!--
         <dependency>
             <groupId>cz.kyngs.widemaker</groupId>
             <artifactId>Core</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 </project>
