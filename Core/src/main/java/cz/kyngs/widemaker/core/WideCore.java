@@ -10,7 +10,7 @@ public class WideCore {
 
     public static BufferedImage wideImg(BufferedImage source){
 
-        BufferedImage target = new BufferedImage(source.getWidth()*3 , source.getHeight(), BufferedImage.TYPE_INT_RGB);
+        BufferedImage target = new BufferedImage(source.getWidth()*3 , source.getHeight(), BufferedImage.TYPE_INT_ARGB);
 
         Graphics graphics = target.getGraphics();
 
@@ -24,6 +24,7 @@ public class WideCore {
         return wideImg(ImageIO.read(source));
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public static void wideImgFromFileToFile(File source, File target) throws IOException {
         if (target.exists()) target.delete();
         target.createNewFile();
